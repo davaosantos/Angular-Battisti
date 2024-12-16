@@ -10,10 +10,17 @@ import { EventosComponent } from "./components/eventos/eventos.component";
 import { EmitterComponent } from "./components/emitter/emitter.component";
 import { ListRenderComponent } from "./components/list-render/list-render.component";
 import { PipesComponent } from "./components/pipes/pipes.component";
+import { TwoWayBindingComponent } from "./components/two-way-binding/two-way-binding.component";
+import { FormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FirstComponentComponent, SecondComponentComponent, ParentDataComponent, DirectivesComponent, CommonModule, IfRenderComponent, EventosComponent, EmitterComponent, ListRenderComponent, PipesComponent],
+  imports: [RouterOutlet, FirstComponentComponent, 
+    SecondComponentComponent, ParentDataComponent, DirectivesComponent,
+     CommonModule, IfRenderComponent, EventosComponent, 
+     EmitterComponent, ListRenderComponent,
+      PipesComponent, TwoWayBindingComponent, FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
