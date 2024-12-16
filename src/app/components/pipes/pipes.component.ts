@@ -10,4 +10,5 @@ import { CommonModule } from '@angular/common';
 export class PipesComponent {
   someText = "TESTANDO O PIPE OPERATOR"
   today = new Date();
+  value = 123.45;
 }
