@@ -7,10 +7,11 @@ import { ParentDataComponent } from "./components/parent-data/parent-data.compon
 import { DirectivesComponent } from "./components/directives/directives.component";
 import { IfRenderComponent } from "./components/if-render/if-render.component";
 import { EventosComponent } from "./components/eventos/eventos.component";
+import { EmitterComponent } from "./components/emitter/emitter.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FirstComponentComponent, SecondComponentComponent, ParentDataComponent, DirectivesComponent, CommonModule, IfRenderComponent, EventosComponent],
+  imports: [RouterOutlet, FirstComponentComponent, SecondComponentComponent, ParentDataComponent, DirectivesComponent, CommonModule, IfRenderComponent, EventosComponent, EmitterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
