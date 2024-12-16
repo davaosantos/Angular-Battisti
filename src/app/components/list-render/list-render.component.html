@@ -1,0 +1,17 @@
+<div class="class">
+    <h2>Animais : </h2>
+    <ul>
+        <li *ngFor="let animal of animals">
+            Nome : {{animal.name}} | Tipo : {{animal.type}}
+        </li>
+    </ul>
+    
+    <br>
+
+    <h2>Animes lista</h2>
+    <ul>
+        <li *ngFor="let anime of animes">
+            Nome : {{anime.name}} - Nota : {{anime.nota}} - Ano : {{anime.year}}
+        </li>
+    </ul>
+</div>
