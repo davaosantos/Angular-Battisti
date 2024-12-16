@@ -6,10 +6,11 @@ import { SecondComponentComponent } from "./components/second-component/second-c
 import { ParentDataComponent } from "./components/parent-data/parent-data.component";
 import { DirectivesComponent } from "./components/directives/directives.component";
 import { IfRenderComponent } from "./components/if-render/if-render.component";
+import { EventosComponent } from "./components/eventos/eventos.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FirstComponentComponent, SecondComponentComponent, ParentDataComponent, DirectivesComponent, CommonModule, IfRenderComponent],
+  imports: [RouterOutlet, FirstComponentComponent, SecondComponentComponent, ParentDataComponent, DirectivesComponent, CommonModule, IfRenderComponent, EventosComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
