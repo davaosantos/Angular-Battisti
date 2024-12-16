@@ -5,10 +5,11 @@ import { FirstComponentComponent } from "./components/first-component/first-comp
 import { SecondComponentComponent } from "./components/second-component/second-component.component";
 import { ParentDataComponent } from "./components/parent-data/parent-data.component";
 import { DirectivesComponent } from "./components/directives/directives.component";
+import { IfRenderComponent } from "./components/if-render/if-render.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FirstComponentComponent, SecondComponentComponent, ParentDataComponent, DirectivesComponent, CommonModule],
+  imports: [RouterOutlet, FirstComponentComponent, SecondComponentComponent, ParentDataComponent, DirectivesComponent, CommonModule, IfRenderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
