@@ -3,6 +3,7 @@
     <h2>{{someText | lowercase}}</h2>
     <h2>{{someText | titlecase}}</h2>
     <h2>{{today | date : "fullDate"}}</h2>
-    <h2>{{value | currency}}</h2>
+    <h2>Valor : {{value | currency}}</h2>
     <h2>{{value | percent}}</h2>
+    <button (click)="increaseValue(value)">Aumentar valor</button>
 </div>
