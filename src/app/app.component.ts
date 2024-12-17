@@ -12,7 +12,7 @@ import { ListRenderComponent } from "./components/list-render/list-render.compon
 import { PipesComponent } from "./components/pipes/pipes.component";
 import { TwoWayBindingComponent } from "./components/two-way-binding/two-way-binding.component";
 import { FormsModule } from '@angular/forms';
-
+import { AppRoutingModule } from './app.routes';
 
 @Component({
   selector: 'app-root',
@@ -20,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     SecondComponentComponent, ParentDataComponent, DirectivesComponent,
      CommonModule, IfRenderComponent, EventosComponent, 
      EmitterComponent, ListRenderComponent,
-      PipesComponent, TwoWayBindingComponent, FormsModule],
+      PipesComponent, TwoWayBindingComponent, FormsModule,
+      AppRoutingModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
