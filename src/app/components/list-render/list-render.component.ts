@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Animal } from 'src/app/Animal';
+import { Anime } from 'src/app/Anime';
 
 import { ListService } from 'src/app/services/list.service';
 
@@ -11,11 +12,19 @@ import { ListService } from 'src/app/services/list.service';
 })
 export class ListRenderComponent implements OnInit {
   animals: Animal[] = [];
+  animes: Anime[] = [];
 
   animalDetails = '';
 
   constructor(private listService: ListService) {
     this.getAnimals();
+    this.getAnimes();
+  }
+
+  getAnimes(){
+    this.listService.getAllAnime().subscribe((animes) =>{
+      this.animes = animes
+    });
   }
 
   getAnimals(){

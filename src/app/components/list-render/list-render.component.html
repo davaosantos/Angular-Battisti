@@ -8,4 +8,11 @@
     </li>
   </ul>
   <h3>{{ animalDetails }}</h3>
+  <br>
+  <h1>Lista animes : </h1>
+  <ul>
+    <li *ngFor="let anime of animes">
+      Nome : {{anime.nome}} - Genero : {{anime.genero}} - Ano : {{anime.ano}}
+    </li>
+  </ul>
 </div>
