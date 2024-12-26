@@ -1,24 +1,15 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { PipesService } from '../../services/pipes.service';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-pipes',
-  imports: [CommonModule],
   templateUrl: './pipes.component.html',
-  styleUrl: './pipes.component.css'
+  styleUrls: ['./pipes.component.css'],
 })
-export class PipesComponent {
-  someText = "TESTANDO O PIPE OPERATOR"
+export class PipesComponent implements OnInit {
+  someText = 'TESTANDO PIPE';
   today = new Date();
-  value = 123.45;
 
-  constructor(private pipeService : PipesService){
+  constructor() {}
 
-  }
-
-  increaseValue(value : any){
-    console.log("Entrou no componente")
-    this.value = this.pipeService.increase(value);
-  }
+  ngOnInit(): void {}
 }

@@ -1,14 +1,18 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-two-way-binding',
-  imports: [CommonModule, FormsModule],
   templateUrl: './two-way-binding.component.html',
-  styleUrl: './two-way-binding.component.css'
+  styleUrls: ['./two-way-binding.component.css'],
 })
-export class TwoWayBindingComponent {
-  name : String = '';
-  age = null;
+export class TwoWayBindingComponent implements OnInit {
+  name: string = '';
+
+  constructor() {}
+
+  ngOnInit(): void {}
+
+  removeAnimal() {
+    this;
+  }
 }

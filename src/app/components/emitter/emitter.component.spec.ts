@@ -8,10 +8,12 @@ describe('EmitterComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [EmitterComponent]
+      declarations: [ EmitterComponent ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(EmitterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

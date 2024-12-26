@@ -8,10 +8,12 @@ describe('ChangeNumberComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ChangeNumberComponent]
+      declarations: [ ChangeNumberComponent ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(ChangeNumberComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

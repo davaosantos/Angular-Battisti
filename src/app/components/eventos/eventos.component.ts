@@ -1,25 +1,18 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-eventos',
-  imports: [CommonModule],
   templateUrl: './eventos.component.html',
-  styleUrl: './eventos.component.css'
+  styleUrls: ['./eventos.component.css'],
 })
-export class EventosComponent {
-  show : Boolean = false;
-  name : String = "David";
-  isSobrenomeConcatenado : Boolean = false;
+export class EventosComponent implements OnInit {
+  show: boolean = false;
 
-  showMessage() : void{
-    this.show = !this.show;
-  }
+  constructor() {}
 
-  showNomeComSobrenome() : void{
-    if(!this.isSobrenomeConcatenado){
-      this.name = this.name + " Oliveira";
-    }
-    this.isSobrenomeConcatenado = true;
+  ngOnInit(): void {}
+
+  showMessage(): void {
+    this.show = true;
   }
 }

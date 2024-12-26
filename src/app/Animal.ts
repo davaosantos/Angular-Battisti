@@ -1,5 +1,5 @@
-export interface Animal{
-    name: String
-    type: String
-    age : Number
+export interface Animal {
+  name: string;
+  type: string;
+  age: number;
 }
