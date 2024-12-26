@@ -9,8 +9,13 @@ import { Anime } from '../Anime';
 })
 export class ListService {
 
-  private apiUrl = "http://localhost:3000/animals";
+  private apiUrlAnimals = "http://localhost:3000/animals";
   private apiUrlAnime = "http://localhost:3000/animes";
+
+
+  getItem(id: number): Observable<Animal> {
+    return this.http.get<Animal>(`${this.apiUrlAnimals}/${id}`);
+  }
 
   constructor(private http : HttpClient) {}
 
@@ -19,10 +24,12 @@ export class ListService {
   }
 
   getAll() : Observable<Animal[]>{
-    return this.http.get<Animal[]>(this.apiUrl);
+    return this.http.get<Animal[]>(this.apiUrlAnimals);
   }
 
   getAllAnime() : Observable<Anime[]>{
     return this.http.get<Anime[]>(this.apiUrlAnime);
   }
+
+  
 }
